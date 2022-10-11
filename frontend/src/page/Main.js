@@ -69,6 +69,7 @@ function Main(props){
                 <Modal
                     title="Song Info"
                     visible={isModalOpen} 
+                    onCancel={handleCancel}
                     footer={[
                     <Button key="back" onClick={handleCancel}>
                         Отмена
@@ -76,6 +77,7 @@ function Main(props){
                     <Button key="submit" type="primary"  onClick={handleOk}>
                         Сохранить
                     </Button>,
+                    
                     ]}
                 >
                     <Input placeholder="Artist name" value={artist} onChange={onChangeArtist}/>

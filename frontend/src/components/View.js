@@ -40,6 +40,8 @@ const View = (props) => {
   const onChangeCount = e =>{
        setCount(e)
   }
+  
+  console.log(props.data)
 
   const getColumnSearchProps = (dataIndex) => ({
     filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }) => (
@@ -143,10 +145,6 @@ const View = (props) => {
       key: 'genre',
       ...getColumnSearchProps('genres'),
       render: (item) => <p>{item && item.genre}</p>,
-      sorter:  {
-        compare: (a, b) => a.genres['genre'].length - b.genres['genre'].length
-      },
-      sortOrder: sortedInfo.columnKey === 'genres' ? sortedInfo.order : null,
       ellipsis: true,
     },
 

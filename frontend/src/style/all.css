@@ -16,8 +16,12 @@
     border-right: 1px solid #000;
 }
 
-.ant-table-thead th.ant-table-column-has-sorters{
+.ant-table-thead th.ant-table-column-has-sorters, .ant-table-thead > tr > th{
     border-bottom: 1px solid #000;
+}
+
+.ant-table-thead > tr > th{
+    border-right: 1px solid #000;
 }
 
 .ant-modal-body{
