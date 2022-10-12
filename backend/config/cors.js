@@ -1,4 +1,4 @@
-const whitelist = ['https://musicfront.vercel.app', 'http://localhost:3001'] 
+const whitelist = ['https://musicfront.vercel.app', 'https://musicback.vercel.app'] 
 // ['https://schedule.alzhik.site', 'https://api.alzhik.site'] - lighsail
 // ['http://schedule_decode.alzhik.site', 'http://apischedule.alzhik.site']  - digitalocean
 // ['http://localhost:3000', 'http://localhost:3001'] local 
